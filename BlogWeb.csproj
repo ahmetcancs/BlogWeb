@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="Files\.gitignore" />
     <Content Include="Files\css\resume.css" />
     <Content Include="Files\css\resume.min.css" />
     <Content Include="Files\gulpfile.js" />
