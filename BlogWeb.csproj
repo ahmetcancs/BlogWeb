@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Files\.gitignore" />
     <Content Include="Files\css\resume.css" />
     <Content Include="Files\css\resume.min.css" />
     <Content Include="Files\gulpfile.js" />
@@ -1488,6 +1489,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Content>
     <Content Include="Files\.travis.yml" />
     <Content Include="Files\LICENSE" />
     <Content Include="Files\package-lock.json" />
@@ -1558,17 +1570,6 @@
     <Content Include="Files\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="Files\vendor\jquery\jquery.min.map" />
     <Content Include="Files\vendor\jquery\jquery.slim.min.map" />
-    <Content Include="DataSet.xsc">
-      <DependentUpon>DataSet.xsd</DependentUpon>
-    </Content>
-    <None Include="DataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
-    </None>
-    <Content Include="DataSet.xss">
-      <DependentUpon>DataSet.xsd</DependentUpon>
-    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
