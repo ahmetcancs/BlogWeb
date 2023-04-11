@@ -31,13 +31,13 @@
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#homeSubmenu">
+                        <a href="#About.Aspx">
                             <i class="glyphicon glyphicon-home"></i>
-                            About Me
+                            ABOUT ME
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#AdminExperiences.Aspx">
                             <i class="glyphicon glyphicon-briefcase"></i>
                             EXPERIENCES
                         </a>

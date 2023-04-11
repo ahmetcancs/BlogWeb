@@ -39,6 +39,7 @@
             <asp:Label ID="Label7" runat="server" Text="PHOTO"></asp:Label>
             <asp:TextBox ID="TextBox7" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
+        <br />
         <asp:Button ID="Button1" runat="server" Text="Update" CssClass="btn btn-success" OnClick="Button1_Click"/>
 
     </div>
