@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu">
+                        <a href="AdminEducations.Aspx">
                             <i class="glyphicon glyphicon-education"></i>
                             EDUCATION
                         </a>

@@ -22,7 +22,7 @@
         <br />
         <div>
             <asp:Label ID="Label3" runat="server" Text="EXPLANATION"></asp:Label>
-            <asp:TextBox ID="TxtExplanation" runat="server" CssClass="form-control" Height="100px" TextMode="MultiLine"></asp:TextBox>
+            <asp:TextBox ID="TxtExplanation" runat="server" CssClass="form-control" Height="100px"></asp:TextBox>
         </div>
         <br />
         <div>
@@ -30,7 +30,7 @@
             <asp:TextBox ID="TxtDate" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
        <br />
-        <asp:Button ID="BtnUpdate" runat="server" Text="Update" CssClass="btn btn-success"/>
+        <asp:Button ID="BtnUpdate" runat="server" Text="Update" CssClass="btn btn-primary" OnClick="BtnUpdate_Click"/>
 
     </div>
 </form>

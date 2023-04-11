@@ -15,12 +15,21 @@ namespace WebApplication3
             TxtId.Enabled = false; //unchangeable area
             TxtId.Text = x.ToString();
 
-            DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
-            TxtTitle.Text = dt.GetDataByExperience(Convert.ToInt16(x))[0].TITLE;
-            TxtSubtitle.Text = dt.GetDataByExperience(Convert.ToInt16(x))[0].SUBTITLE;
-            TxtExplanation.Text = dt.GetDataByExperience(Convert.ToInt16(x))[0].EXPLANATION;
-            TxtDate.Text = dt.GetDataByExperience(Convert.ToInt16(x))[0].DATE;
+            if (Page.IsPostBack == false)
+            {
+                DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
+                TxtTitle.Text = dt.GetDataByExperience(Convert.ToInt16(x))[0].TITLE;
+                TxtSubtitle.Text = dt.GetDataByExperience(Convert.ToInt16(x))[0].SUBTITLE;
+                TxtExplanation.Text = dt.GetDataByExperience(Convert.ToInt16(x))[0].EXPLANATION;
+                TxtDate.Text = dt.GetDataByExperience(Convert.ToInt16(x))[0].DATE;
+            }
+        }
 
+        protected void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
+            dt.ExperienceUpdate(TxtTitle.Text, TxtSubtitle.Text, TxtExplanation.Text, TxtDate.Text, Convert.ToInt16(TxtId.Text));
+            Response.Redirect("AdminExperiences.Aspx");
         }
     }
 }
