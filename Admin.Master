@@ -31,25 +31,23 @@
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#About.Aspx">
+                        <a href="About.Aspx">
                             <i class="glyphicon glyphicon-home"></i>
                             ABOUT ME
                         </a>
                     </li>
                     <li>
-                        <a href="#AdminExperiences.Aspx">
+                        <a href="AdminExperiences.Aspx">
                             <i class="glyphicon glyphicon-briefcase"></i>
                             EXPERIENCES
                         </a>
+                    </li>
+                    <li>
                         <a href="#pageSubmenu">
                             <i class="glyphicon glyphicon-education"></i>
                             EDUCATION
                         </a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
-                        </ul>
+                       
                     </li>
                     <li>
                         <a href="#">
