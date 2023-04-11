@@ -24,8 +24,8 @@
                         <td><%# Eval("EXPLANATION") %></td>
                         <td><%# Eval("DATE") %></td>
                         <td>
-                            <asp:HyperLink NavigateUrl='<%#"AdminExperienceDelete.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server">Delete</asp:HyperLink>
-                            <asp:HyperLink NavigateUrl='<%#"AdminExperienceUpdate.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server">Update</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%#"AdminExperienceDelete.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Delete</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%#"AdminExperienceUpdate.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Update</asp:HyperLink>
                        </td>
                     </tr>
                 </ItemTemplate>
@@ -33,6 +33,6 @@
         </tbody>
 
         </table>
-        <asp:HyperLink NavigateUrl="~/AdminExperienceAdd.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-info">ExperienceAdd</asp:HyperLink>
+        <asp:HyperLink NavigateUrl="~/AdminExperienceAdd.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-info">Add an Experience</asp:HyperLink>
       </form>
 </asp:Content>
