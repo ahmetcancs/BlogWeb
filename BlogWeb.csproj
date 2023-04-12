@@ -69,7 +69,9 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AdminEducationAdd.aspx" />
+    <Content Include="AdminEducationDelete.aspx" />
     <Content Include="AdminEducations.aspx" />
+    <Content Include="AdminEducationUpdate.aspx" />
     <Content Include="AdminExperienceAdd.aspx" />
     <Content Include="AdminExperienceDelete.aspx" />
     <Content Include="AdminExperiences.aspx" />
@@ -1768,12 +1770,26 @@
     <Compile Include="AdminEducationAdd.aspx.designer.cs">
       <DependentUpon>AdminEducationAdd.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminEducationDelete.aspx.cs">
+      <DependentUpon>AdminEducationDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEducationDelete.aspx.designer.cs">
+      <DependentUpon>AdminEducationDelete.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminEducations.aspx.cs">
       <DependentUpon>AdminEducations.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminEducations.aspx.designer.cs">
       <DependentUpon>AdminEducations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEducationUpdate.aspx.cs">
+      <DependentUpon>AdminEducationUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEducationUpdate.aspx.designer.cs">
+      <DependentUpon>AdminEducationUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminExperienceAdd.aspx.cs">
       <DependentUpon>AdminExperienceAdd.aspx</DependentUpon>
@@ -2003,6 +2019,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -30,7 +30,7 @@
             <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
        <br />
-        <asp:Button ID="Button1" runat="server" Text="Update" CssClass="btn btn-primary" OnClick="Button1_Click"/>
+        <asp:Button ID="Button1" runat="server" Text="Add" CssClass="btn btn-primary" OnClick="Button1_Click"/>
 
     </div>
 </form>
