@@ -5,15 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication3
+namespace BlogWeb
 {
     public partial class AdminEducations : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             DataSetTableAdapters.TBLEDUCATIONTableAdapter dt = new DataSetTableAdapters.TBLEDUCATIONTableAdapter();
-            Repeater1.DataSource = dt.ListEducation();
-            Repeater1.DataBind();
+            RptEducation.DataSource = dt.ListEducation();
+            RptEducation.DataBind();
         }
     }
 }

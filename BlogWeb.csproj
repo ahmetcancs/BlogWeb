@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApplication3</RootNamespace>
-    <AssemblyName>WebApplication3</AssemblyName>
+    <RootNamespace>BlogWeb</RootNamespace>
+    <AssemblyName>BlogWeb</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -67,7 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="AdminAbout.aspx" />
     <Content Include="AdminEducationAdd.aspx" />
     <Content Include="AdminEducationDelete.aspx" />
     <Content Include="AdminEducations.aspx" />
@@ -343,6 +343,10 @@
     <Content Include="AdminFiles\sidebar\style4.css" />
     <Content Include="AdminFiles\sidebar\style5.css" />
     <Content Include="AdminFiles\StyleSheet2.css" />
+    <Content Include="AdminSkillAdd.aspx" />
+    <Content Include="AdminSkillDelete.aspx" />
+    <Content Include="AdminSkills.aspx" />
+    <Content Include="AdminSkillUpdate.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Files\css\resume.css" />
     <Content Include="Files\css\resume.min.css" />
@@ -1749,12 +1753,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="AdminAbout.aspx.cs">
+      <DependentUpon>AdminAbout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="AdminAbout.aspx.designer.cs">
+      <DependentUpon>AdminAbout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -1818,6 +1822,34 @@
     </Compile>
     <Compile Include="AdminExperienceUpdate.aspx.designer.cs">
       <DependentUpon>AdminExperienceUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSkillAdd.aspx.cs">
+      <DependentUpon>AdminSkillAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSkillAdd.aspx.designer.cs">
+      <DependentUpon>AdminSkillAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSkillDelete.aspx.cs">
+      <DependentUpon>AdminSkillDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSkillDelete.aspx.designer.cs">
+      <DependentUpon>AdminSkillDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSkills.aspx.cs">
+      <DependentUpon>AdminSkills.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSkills.aspx.designer.cs">
+      <DependentUpon>AdminSkills.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSkillUpdate.aspx.cs">
+      <DependentUpon>AdminSkillUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSkillUpdate.aspx.designer.cs">
+      <DependentUpon>AdminSkillUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataSet.Designer.cs">
       <AutoGen>True</AutoGen>

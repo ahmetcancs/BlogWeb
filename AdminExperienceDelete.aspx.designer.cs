@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace WebApplication3
+namespace BlogWeb
 {
     public partial class AdminExperienceDelete
     {

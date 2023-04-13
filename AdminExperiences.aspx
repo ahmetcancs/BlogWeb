@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminExperiences.aspx.cs" Inherits="WebApplication3.AdminExperiences" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminExperiences.aspx.cs" Inherits="BlogWeb.AdminExperiences" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-    <form id="Form1" runat="server">
+    <form id="FrmExperiences" runat="server">
         <table class="table table-bordered">
         <tr>
             <th>ID</th>
@@ -15,7 +15,7 @@
             <th>TRANSACTIONS</th>
         </tr>
         <tbody>
-            <asp:Repeater ID="Repeater1" runat="server">
+            <asp:Repeater ID="RptExperiences" runat="server">
                 <ItemTemplate>
                     <tr>
                         <th><%# Eval("ID") %></th>
@@ -24,8 +24,8 @@
                         <td><%# Eval("EXPLANATION") %></td>
                         <td><%# Eval("DATE") %></td>
                         <td>
-                            <asp:HyperLink NavigateUrl='<%#"AdminExperienceDelete.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Delete</asp:HyperLink>
-                            <asp:HyperLink NavigateUrl='<%#"AdminExperienceUpdate.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Update</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%#"AdminExperienceDelete.aspx?ID=" + Eval("ID") %>' ID="DeleteLink" runat="server" CssClass="btn btn-danger">Delete</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%#"AdminExperienceUpdate.aspx?ID=" + Eval("ID") %>' ID="UpdateLink" runat="server" CssClass="btn btn-success">Update</asp:HyperLink>
                        </td>
                     </tr>
                 </ItemTemplate>
@@ -33,6 +33,6 @@
         </tbody>
 
         </table>
-        <asp:HyperLink NavigateUrl="~/AdminExperienceAdd.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-info">Add an Experience</asp:HyperLink>
+        <asp:HyperLink NavigateUrl="~/AdminExperienceAdd.aspx" ID="AddLink" runat="server" CssClass="btn btn-info">Add an Experience</asp:HyperLink>
       </form>
 </asp:Content>

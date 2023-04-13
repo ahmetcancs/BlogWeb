@@ -11,25 +11,34 @@ namespace BlogWeb
 {
 
 
-    public partial class Admin
+    public partial class AdminSkills
     {
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// FrmSkills control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm FrmSkills;
 
         /// <summary>
-        /// ContentPlaceHolder2 control.
+        /// RptSkills control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
+        protected global::System.Web.UI.WebControls.Repeater RptSkills;
+
+        /// <summary>
+        /// AddLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink AddLink;
     }
 }

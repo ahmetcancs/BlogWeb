@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication3.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BlogWeb.Default" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -200,7 +200,7 @@
           </ul>
 
           <div class="subheading mb-3">Workflow</div>
-<asp:Repeater ID="Repeater4" runat="server">
+<asp:Repeater ID="Repeater4" runat="server"> 
     <ItemTemplate>
           <ul class="fa-ul mb-0">
             <li>

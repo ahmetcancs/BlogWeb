@@ -5,16 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls; 
 
-namespace WebApplication3
+namespace BlogWeb
 {
     public partial class AdminExperienceDelete : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             //ToInt16 because we signed ID *smallint*
-            int x = Convert.ToInt16(Request.QueryString["ID"]);
+            int Id = Convert.ToInt16(Request.QueryString["ID"]);
             DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
-            dt.ExperienceDelete(Convert.ToInt16(x));
+            dt.ExperienceDelete(Convert.ToInt16(Id));
             Response.Redirect("AdminExperiences.Aspx");
         }
     }

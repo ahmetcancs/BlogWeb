@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication3
+namespace BlogWeb
 {
     public partial class AdminEducationAdd : System.Web.UI.Page
     {
@@ -14,10 +14,10 @@ namespace WebApplication3
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void BtnAdd_Click(object sender, EventArgs e)
         {
             DataSetTableAdapters.TBLEDUCATIONTableAdapter dt = new DataSetTableAdapters.TBLEDUCATIONTableAdapter();
-            dt.EducationAdd(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text,TextBox5.Text);
+            dt.EducationAdd(TxtTitle.Text, TxtSubtitle.Text, TxtExplanation.Text, TxtAverage.Text,TxtAverage.Text);
             Response.Redirect("AdminEducations.Aspx");
         }
     }

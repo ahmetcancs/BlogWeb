@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminExperienceUpdate.aspx.cs" Inherits="WebApplication3.AdminExperienceUpdate" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminExperienceUpdate.aspx.cs" Inherits="BlogWeb.AdminExperienceUpdate" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-    <form id="Form1" runat="server">
+    <form id="FrmExperienceUpdate" runat="server">
     <div class="form-group">
         <div>
             <asp:Label ID="Label5" runat="server" Text="ID"></asp:Label>

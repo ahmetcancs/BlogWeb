@@ -1,12 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminEducationUpdate.aspx.cs" Inherits="WebApplication3.AdminEducationUpdate" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminEducationUpdate.aspx.cs" Inherits="BlogWeb.AdminEducationUpdate" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <form id="Form1" runat="server">
+    <form id="FrmEducationUpdate" runat="server">
     <div class="form-group">
         <div>
             <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label>
-            <asp:TextBox ID="Txtid" runat="server" CssClass="form-control"></asp:TextBox>
+            <asp:TextBox ID="TxtId" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
        <br />
       <div>
@@ -35,7 +35,7 @@
         </div>
        <br />
 
-        <asp:Button ID="Button1" runat="server" Text="Update" CssClass="btn btn-primary" OnClick="Button1_Click1" />
+        <asp:Button ID="BtnUpdate" runat="server" Text="Update" CssClass="btn btn-primary" OnClick="BtnUpdate_Click" />
 
     </div>
 </form>

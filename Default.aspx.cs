@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication3
+namespace BlogWeb
 {
     public partial class Default : System.Web.UI.Page
     {
