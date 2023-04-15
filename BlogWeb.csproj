@@ -343,11 +343,16 @@
     <Content Include="AdminFiles\sidebar\style4.css" />
     <Content Include="AdminFiles\sidebar\style5.css" />
     <Content Include="AdminFiles\StyleSheet2.css" />
+    <Content Include="AdminHobbies.aspx" />
+    <Content Include="AdminHobbyAdd.aspx" />
+    <Content Include="AdminHobbyDelete.aspx" />
+    <Content Include="AdminHobbyUpdate.aspx" />
     <Content Include="AdminSkillAdd.aspx" />
     <Content Include="AdminSkillDelete.aspx" />
     <Content Include="AdminSkills.aspx" />
     <Content Include="AdminSkillUpdate.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Files\.gitignore" />
     <Content Include="Files\css\resume.css" />
     <Content Include="Files\css\resume.min.css" />
     <Content Include="Files\gulpfile.js" />
@@ -1822,6 +1827,34 @@
     </Compile>
     <Compile Include="AdminExperienceUpdate.aspx.designer.cs">
       <DependentUpon>AdminExperienceUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHobbies.aspx.cs">
+      <DependentUpon>AdminHobbies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHobbies.aspx.designer.cs">
+      <DependentUpon>AdminHobbies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHobbyAdd.aspx.cs">
+      <DependentUpon>AdminHobbyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHobbyAdd.aspx.designer.cs">
+      <DependentUpon>AdminHobbyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHobbyDelete.aspx.cs">
+      <DependentUpon>AdminHobbyDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHobbyDelete.aspx.designer.cs">
+      <DependentUpon>AdminHobbyDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHobbyUpdate.aspx.cs">
+      <DependentUpon>AdminHobbyUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHobbyUpdate.aspx.designer.cs">
+      <DependentUpon>AdminHobbyUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminSkillAdd.aspx.cs">
       <DependentUpon>AdminSkillAdd.aspx</DependentUpon>

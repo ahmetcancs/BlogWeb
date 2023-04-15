@@ -26,7 +26,6 @@ namespace BlogWeb
                 TxtDate.Text = dt.GetDataByEducation(Convert.ToInt16(Id))[0].DATE;
                 TxtAverage.Text = dt.GetDataByEducation(Convert.ToInt16(Id))[0].AVERAGE;
             }
-
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
