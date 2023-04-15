@@ -72,6 +72,10 @@
     <Content Include="AdminEducationDelete.aspx" />
     <Content Include="AdminEducations.aspx" />
     <Content Include="AdminEducationUpdate.aspx" />
+    <Content Include="AdminEventAdd.aspx" />
+    <Content Include="AdminEventDelete.aspx" />
+    <Content Include="AdminEvents.aspx" />
+    <Content Include="AdminEventUpdate.aspx" />
     <Content Include="AdminExperienceAdd.aspx" />
     <Content Include="AdminExperienceDelete.aspx" />
     <Content Include="AdminExperiences.aspx" />
@@ -1799,6 +1803,34 @@
     </Compile>
     <Compile Include="AdminEducationUpdate.aspx.designer.cs">
       <DependentUpon>AdminEducationUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEventAdd.aspx.cs">
+      <DependentUpon>AdminEventAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEventAdd.aspx.designer.cs">
+      <DependentUpon>AdminEventAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEventDelete.aspx.cs">
+      <DependentUpon>AdminEventDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEventDelete.aspx.designer.cs">
+      <DependentUpon>AdminEventDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEvents.aspx.cs">
+      <DependentUpon>AdminEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEvents.aspx.designer.cs">
+      <DependentUpon>AdminEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEventUpdate.aspx.cs">
+      <DependentUpon>AdminEventUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEventUpdate.aspx.designer.cs">
+      <DependentUpon>AdminEventUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminExperienceAdd.aspx.cs">
       <DependentUpon>AdminExperienceAdd.aspx</DependentUpon>

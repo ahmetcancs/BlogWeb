@@ -31,7 +31,6 @@
         </div>
        <br />
         <asp:Button ID="BtnAdd" runat="server" Text="Add" CssClass="btn btn-primary" OnClick="BtnAdd_Click"/>
-
     </div>
 </form>
 </asp:Content>
