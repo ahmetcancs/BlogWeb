@@ -28,7 +28,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Clarence Taylor</span>
+            <span class="d-block d-lg-none">Ahmet CAN</span>
             <span class="d-none d-lg-block">
                 <asp:Repeater ID="Repeater7" runat="server">
                     <ItemTemplate>
@@ -59,6 +59,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#todolist">To Do List</a>
                 </li>
             </ul>
         </div>
@@ -118,9 +121,11 @@
                                 <h3 class="mb-0">
                                     <asp:Label ID="Label7" runat="server" Text='<%#Eval("TITLE") %>'></asp:Label></h3>
                                 <div class="subheading mb-3">
-                                    <asp:Label ID="Label8" runat="server" Text='<%#Eval("SUBTITLE") %>'></asp:Label></div>
+                                    <asp:Label ID="Label8" runat="server" Text='<%#Eval("SUBTITLE") %>'></asp:Label>
+                                </div>
                                 <p>
-                                    <asp:Label ID="Label9" runat="server" Text='<%#Eval("EXPLANATION") %>'></asp:Label></p>
+                                    <asp:Label ID="Label9" runat="server" Text='<%#Eval("EXPLANATION") %>'></asp:Label>
+                                </p>
 
                             </div>
 
@@ -147,11 +152,14 @@
                                 <h3 class="mb-0">
                                     <asp:Label ID="Label11" runat="server" Text='<%#Eval("TITLE") %>'></asp:Label></h3>
                                 <div class="subheading mb-3">
-                                    <asp:Label ID="Label12" runat="server" Text='<%#Eval("SUBTITLE") %>'></asp:Label></div>
+                                    <asp:Label ID="Label12" runat="server" Text='<%#Eval("SUBTITLE") %>'></asp:Label>
+                                </div>
                                 <div>
-                                    <asp:Label ID="Label13" runat="server" Text='<%#Eval("EXPLANATION") %>'></asp:Label></div>
+                                    <asp:Label ID="Label13" runat="server" Text='<%#Eval("EXPLANATION") %>'></asp:Label>
+                                </div>
                                 <p>
-                                    <asp:Label ID="Label14" runat="server" Text='<%#Eval("AVERAGE") %>'></asp:Label></p>
+                                    <asp:Label ID="Label14" runat="server" Text='<%#Eval("AVERAGE") %>'></asp:Label>
+                                </p>
                             </div>
                             <div class="resume-date text-md-right">
                                 <span class="text-primary">
