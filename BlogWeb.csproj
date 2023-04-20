@@ -355,6 +355,9 @@
     <Content Include="AdminSkillDelete.aspx" />
     <Content Include="AdminSkills.aspx" />
     <Content Include="AdminSkillUpdate.aspx" />
+    <Content Include="AdminToDoListAdd.aspx" />
+    <Content Include="AdminToDoListDelete.aspx" />
+    <Content Include="AdminToDoListUpdate.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Files\.gitignore" />
     <Content Include="Files\css\resume.css" />
@@ -1762,6 +1765,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Login.css" />
     <Content Include="Web.config" />
+    <Content Include="AdminToDoList.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminAbout.aspx.cs">
@@ -1918,6 +1922,27 @@
     <Compile Include="AdminSkillUpdate.aspx.designer.cs">
       <DependentUpon>AdminSkillUpdate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminToDoListAdd.aspx.cs">
+      <DependentUpon>AdminToDoListAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminToDoListAdd.aspx.designer.cs">
+      <DependentUpon>AdminToDoListAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminToDoListDelete.aspx.cs">
+      <DependentUpon>AdminToDoListDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminToDoListDelete.aspx.designer.cs">
+      <DependentUpon>AdminToDoListDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminToDoListUpdate.aspx.cs">
+      <DependentUpon>AdminToDoListUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminToDoListUpdate.aspx.designer.cs">
+      <DependentUpon>AdminToDoListUpdate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1938,6 +1963,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AdminToDoList.aspx.cs">
+      <DependentUpon>AdminToDoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminToDoList.aspx.designer.cs">
+      <DependentUpon>AdminToDoList.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataSet.xsc">

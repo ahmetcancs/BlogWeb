@@ -60,7 +60,7 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
                 </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#todolist">To Do List</a>
                 </li>
             </ul>
@@ -237,7 +237,7 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
             <div class="my-auto">
-                <h2 class="mb-5">Interests</h2>
+                <h2 class="mb-5">HOBBIES</h2>
                 <asp:Repeater ID="Repeater5" runat="server">
                     <ItemTemplate>
 
@@ -266,17 +266,31 @@
                 </asp:Repeater>
             </div>
         </section>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="todolist">
+            <div class="my-auto">
+                <h2 class="mb-5">To Do List</h2>
+                <asp:Repeater ID="Repeater8" runat="server">
+                    <ItemTemplate>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-trophy text-warning"></i>
+                                <asp:Label ID="Label17" runat="server" Text='<%#Eval("TODOLIST") %>'></asp:Label></li>
+                        </ul>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+        </section>
 
     </div>
 
-    <!-- Bootstrap core JavaScript -->
+
     <script src="Files/vendor/jquery/jquery.min.js"></script>
     <script src="Files/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
+
     <script src="Files/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
+
     <script src="Files/js/resume.min.js"></script>
 
 </body>

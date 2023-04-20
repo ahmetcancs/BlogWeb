@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace BlogWeb
 {
-    public partial class About : System.Web.UI.Page
+    public partial class AdminAbout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace BlogWeb
         {
             DataSetTableAdapters.TBLABOUTTableAdapter dt = new DataSetTableAdapters.TBLABOUTTableAdapter();
             dt.AboutUpdate(TxtName.Text, TxtSurname.Text, TxtAddress.Text, TxtMail.Text, TxtPhone.Text, TxtNote.Text, TxtPhoto.Text);
-            Response.Redirect("Default.Aspx");
+            Response.Redirect("AdminAbout.Aspx");
         }
     }
 }

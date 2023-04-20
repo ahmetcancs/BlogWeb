@@ -7,32 +7,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Web Blog Admin Panel 2023</title>
 
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
 
-    <!-- Bootstrap CSS CDN -->
-    <link href="AdminFiles/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Our Custom CSS -->
-    <link href="AdminFiles/StyleSheet2.css" rel="stylesheet" />
+
+    <link href="/AdminFiles/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/AdminFiles/StyleSheet2.css" rel="stylesheet" />
 </head>
 <body>
-
-
-
     <div class="wrapper">
-        <!-- Sidebar Holder -->
+
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Admin Panel</h3>
+                <h3>Blog Web Admin Panel</h3>
                 <strong>BS</strong>
             </div>
-
             <ul class="list-unstyled components">
                 <li>
                     <a href="AdminAbout.Aspx">
-                        <i class="glyphicon glyphicon-home"></i>
+                        <i class="glyphicon glyphicon-user"></i>
                         ABOUT ME
                     </a>
                 </li>
@@ -47,7 +41,6 @@
                         <i class="glyphicon glyphicon-education"></i>
                         EDUCATION
                     </a>
-
                 </li>
                 <li>
                     <a href="AdminSkills.Aspx">
@@ -63,35 +56,28 @@
                 </li>
                 <li>
                     <a href="AdminEvents.Aspx">
-                        <i class="glyphicon glyphicon-book"></i>
+                        <i class="glyphicon glyphicon-fire"></i>
                         EVENTS
                     </a>
                 </li>
+                <li>
+                    <a href="AdminToDoList.Aspx">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                        To Do List
+                    </a>
+                </li>
             </ul>
-
-
         </nav>
-
         <!-- Page Content Holder -->
         <div id="content">
-
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                 <!-- Refresh area -->
             </asp:ContentPlaceHolder>
-
-
         </div>
     </div>
 
-
-
-
-
-    <!-- jQuery CDN -->
-    <script src="AdminFiles/jquery-1.12.0.min.js"></script>
-    <!-- Bootstrap Js CDN -->
-    <script src="AdminFiles/js-bootstrap.min.js"></script>
-
+    <script src="/AdminFiles/jquery-1.12.0.min.js"></script>
+    <script src="/AdminFiles/js-bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {

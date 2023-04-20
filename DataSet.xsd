@@ -272,7 +272,7 @@ FROM            TBLHOBBIES</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="HobbyDelete" Modifier="Public" Name="HobbyDelete" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="HobbyDelete">
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="HobbyDelete" Modifier="Public" Name="HobbyDelete" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="HobbyDelete">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM TBLHOBBIES WHERE ID=@ID</CommandText>
@@ -282,7 +282,7 @@ FROM            TBLHOBBIES</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="HobbyUpdate" Modifier="Public" Name="HobbyUpdate" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="HobbyUpdate">
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="HobbyUpdate" Modifier="Public" Name="HobbyUpdate" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="HobbyUpdate">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE TBLHOBBIES SET HOBBY=@HOBBY WHERE ID=@ID</CommandText>
@@ -330,7 +330,7 @@ FROM            TBLEVENTS</CommandText>
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="EventDelete" Modifier="Public" Name="EventDelete" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="EventDelete">
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="EventDelete" Modifier="Public" Name="EventDelete" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="EventDelete">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM TBLEVENTS WHERE ID=@ID</CommandText>
@@ -340,7 +340,7 @@ FROM            TBLEVENTS</CommandText>
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="EventUpdate" Modifier="Public" Name="EventUpdate" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="EventUpdate">
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="EventUpdate" Modifier="Public" Name="EventUpdate" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="EventUpdate">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE TBLEVENTS SET EVENT=@EVENT WHERE ID=@ID</CommandText>
@@ -431,6 +431,78 @@ FROM            TBLSKILLS</CommandText>
               </DbSource>
             </Sources>
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TBLTODOLISTTableAdapter" GeneratorDataComponentClassName="TBLTODOLISTTableAdapter" Name="TBLTODOLIST" UserDataComponentName="TBLTODOLISTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="BlogWebDB.dbo.TBLTODOLIST" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillToDoList" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="ListToDoList" GeneratorSourceName="FillToDoList" GetMethodModifier="Public" GetMethodName="ListToDoList" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="ListToDoList" UserSourceName="FillToDoList">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [TBLTODOLIST] ([TITLE], [DESCRIPTION]) VALUES (@TITLE, @DESCRIPTION)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TITLE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TITLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DESCRIPTION" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DESCRIPTION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID, TITLE, DESCRIPTION
+FROM            TBLTODOLIST</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="TITLE" DataSetColumn="TITLE" />
+              <Mapping SourceColumn="DESCRIPTION" DataSetColumn="DESCRIPTION" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="BlogWebDB.dbo.TBLTODOLIST" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByToDoList" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByToDoList" GeneratorSourceName="FillByToDoList" GetMethodModifier="Public" GetMethodName="GetDataByToDoList" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByToDoList" UserSourceName="FillByToDoList">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM TBLTODOLIST WHERE ID=@ID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="BlogWebDB.dbo.TBLTODOLIST" DataTypeServer="smallint" DbType="Int16" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="SmallInt" Scale="0" Size="2" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ToDoListAdd" Modifier="Public" Name="ToDoListAdd" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ToDoListAdd">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO [TBLTODOLIST] ([TITLE], [DESCRIPTION]) VALUES (@TITLE, @DESCRIPTION)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="TITLE" ColumnName="TITLE" DataSourceName="BlogWebDB.dbo.TBLTODOLIST" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@TITLE" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="TITLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DESCRIPTION" ColumnName="DESCRIPTION" DataSourceName="BlogWebDB.dbo.TBLTODOLIST" DataTypeServer="varchar(200)" DbType="AnsiString" Direction="Input" ParameterName="@DESCRIPTION" Precision="0" ProviderType="VarChar" Scale="0" Size="200" SourceColumn="DESCRIPTION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ToDoListDelete" Modifier="Public" Name="ToDoListDelete" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ToDoListDelete">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM TBLTODOLIST WHERE ID=@ID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="BlogWebDB.dbo.TBLTODOLIST" DataTypeServer="smallint" DbType="Int16" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="SmallInt" Scale="0" Size="2" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="BlogWebDBConnectionString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ToDoListUpdate" Modifier="Public" Name="ToDoListUpdate" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ToDoListUpdate">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE TBLTODOLIST SET TITLE=@TITLE,DESCRIPTION=@DESCRIPTION WHERE ID=@ID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="TITLE" ColumnName="TITLE" DataSourceName="BlogWebDB.dbo.TBLTODOLIST" DataTypeServer="varchar(50)" DbType="AnsiString" Direction="Input" ParameterName="@TITLE" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumn="TITLE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="DESCRIPTION" ColumnName="DESCRIPTION" DataSourceName="BlogWebDB.dbo.TBLTODOLIST" DataTypeServer="varchar(200)" DbType="AnsiString" Direction="Input" ParameterName="@DESCRIPTION" Precision="0" ProviderType="VarChar" Scale="0" Size="200" SourceColumn="DESCRIPTION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ID" ColumnName="ID" DataSourceName="BlogWebDB.dbo.TBLTODOLIST" DataTypeServer="smallint" DbType="Int16" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="SmallInt" Scale="0" Size="2" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -442,50 +514,50 @@ FROM            TBLSKILLS</CommandText>
         <xs:element name="TBLABOUT" msprop:Generator_RowEvHandlerName="TBLABOUTRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLABOUTRowDeleted" msprop:Generator_RowDeletingName="TBLABOUTRowDeleting" msprop:Generator_RowEvArgName="TBLABOUTRowChangeEvent" msprop:Generator_TablePropName="TBLABOUT" msprop:Generator_RowChangedName="TBLABOUTRowChanged" msprop:Generator_UserTableName="TBLABOUT" msprop:Generator_RowChangingName="TBLABOUTRowChanging" msprop:Generator_RowClassName="TBLABOUTRow" msprop:Generator_TableClassName="TBLABOUTDataTable" msprop:Generator_TableVarName="tableTBLABOUT">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
-              <xs:element name="NAME" msprop:Generator_UserColumnName="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" minOccurs="0">
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
+              <xs:element name="NAME" msprop:Generator_ColumnPropNameInTable="NAMEColumn" msprop:Generator_ColumnPropNameInRow="NAME" msprop:Generator_UserColumnName="NAME" msprop:Generator_ColumnVarNameInTable="columnNAME" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="SURNAME" msprop:Generator_UserColumnName="SURNAME" msprop:Generator_ColumnPropNameInTable="SURNAMEColumn" msprop:Generator_ColumnPropNameInRow="SURNAME" msprop:Generator_ColumnVarNameInTable="columnSURNAME" minOccurs="0">
+              <xs:element name="SURNAME" msprop:Generator_ColumnPropNameInTable="SURNAMEColumn" msprop:Generator_ColumnPropNameInRow="SURNAME" msprop:Generator_UserColumnName="SURNAME" msprop:Generator_ColumnVarNameInTable="columnSURNAME" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ADDRESS" msprop:Generator_UserColumnName="ADDRESS" msprop:Generator_ColumnPropNameInTable="ADDRESSColumn" msprop:Generator_ColumnPropNameInRow="ADDRESS" msprop:Generator_ColumnVarNameInTable="columnADDRESS" minOccurs="0">
+              <xs:element name="ADDRESS" msprop:Generator_ColumnPropNameInTable="ADDRESSColumn" msprop:Generator_ColumnPropNameInRow="ADDRESS" msprop:Generator_UserColumnName="ADDRESS" msprop:Generator_ColumnVarNameInTable="columnADDRESS" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="200" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="MAIL" msprop:Generator_UserColumnName="MAIL" msprop:Generator_ColumnPropNameInTable="MAILColumn" msprop:Generator_ColumnPropNameInRow="MAIL" msprop:Generator_ColumnVarNameInTable="columnMAIL" minOccurs="0">
+              <xs:element name="MAIL" msprop:Generator_ColumnPropNameInTable="MAILColumn" msprop:Generator_ColumnPropNameInRow="MAIL" msprop:Generator_UserColumnName="MAIL" msprop:Generator_ColumnVarNameInTable="columnMAIL" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PHONE" msprop:Generator_UserColumnName="PHONE" msprop:Generator_ColumnPropNameInTable="PHONEColumn" msprop:Generator_ColumnPropNameInRow="PHONE" msprop:Generator_ColumnVarNameInTable="columnPHONE" minOccurs="0">
+              <xs:element name="PHONE" msprop:Generator_ColumnPropNameInTable="PHONEColumn" msprop:Generator_ColumnPropNameInRow="PHONE" msprop:Generator_UserColumnName="PHONE" msprop:Generator_ColumnVarNameInTable="columnPHONE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="NOTE" msprop:Generator_UserColumnName="NOTE" msprop:Generator_ColumnPropNameInTable="NOTEColumn" msprop:Generator_ColumnPropNameInRow="NOTE" msprop:Generator_ColumnVarNameInTable="columnNOTE" minOccurs="0">
+              <xs:element name="NOTE" msprop:Generator_ColumnPropNameInTable="NOTEColumn" msprop:Generator_ColumnPropNameInRow="NOTE" msprop:Generator_UserColumnName="NOTE" msprop:Generator_ColumnVarNameInTable="columnNOTE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1000" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PHOTO" msprop:Generator_UserColumnName="PHOTO" msprop:Generator_ColumnPropNameInTable="PHOTOColumn" msprop:Generator_ColumnPropNameInRow="PHOTO" msprop:Generator_ColumnVarNameInTable="columnPHOTO" minOccurs="0">
+              <xs:element name="PHOTO" msprop:Generator_ColumnPropNameInTable="PHOTOColumn" msprop:Generator_ColumnPropNameInRow="PHOTO" msprop:Generator_UserColumnName="PHOTO" msprop:Generator_ColumnVarNameInTable="columnPHOTO" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
@@ -495,32 +567,32 @@ FROM            TBLSKILLS</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TBLEXPERIENCE" msprop:Generator_RowClassName="TBLEXPERIENCERow" msprop:Generator_RowEvHandlerName="TBLEXPERIENCERowChangeEventHandler" msprop:Generator_RowDeletedName="TBLEXPERIENCERowDeleted" msprop:Generator_RowDeletingName="TBLEXPERIENCERowDeleting" msprop:Generator_RowEvArgName="TBLEXPERIENCERowChangeEvent" msprop:Generator_TablePropName="TBLEXPERIENCE" msprop:Generator_RowChangedName="TBLEXPERIENCERowChanged" msprop:Generator_UserTableName="TBLEXPERIENCE" msprop:Generator_RowChangingName="TBLEXPERIENCERowChanging" msprop:Generator_TableClassName="TBLEXPERIENCEDataTable" msprop:Generator_TableVarName="tableTBLEXPERIENCE">
+        <xs:element name="TBLEXPERIENCE" msprop:Generator_RowEvHandlerName="TBLEXPERIENCERowChangeEventHandler" msprop:Generator_RowDeletedName="TBLEXPERIENCERowDeleted" msprop:Generator_RowDeletingName="TBLEXPERIENCERowDeleting" msprop:Generator_RowEvArgName="TBLEXPERIENCERowChangeEvent" msprop:Generator_TablePropName="TBLEXPERIENCE" msprop:Generator_RowChangedName="TBLEXPERIENCERowChanged" msprop:Generator_UserTableName="TBLEXPERIENCE" msprop:Generator_RowChangingName="TBLEXPERIENCERowChanging" msprop:Generator_RowClassName="TBLEXPERIENCERow" msprop:Generator_TableClassName="TBLEXPERIENCEDataTable" msprop:Generator_TableVarName="tableTBLEXPERIENCE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
-              <xs:element name="TITLE" msprop:Generator_UserColumnName="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_ColumnVarNameInTable="columnTITLE" minOccurs="0">
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
+              <xs:element name="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_UserColumnName="TITLE" msprop:Generator_ColumnVarNameInTable="columnTITLE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="SUBTITLE" msprop:Generator_UserColumnName="SUBTITLE" msprop:Generator_ColumnPropNameInTable="SUBTITLEColumn" msprop:Generator_ColumnPropNameInRow="SUBTITLE" msprop:Generator_ColumnVarNameInTable="columnSUBTITLE" minOccurs="0">
+              <xs:element name="SUBTITLE" msprop:Generator_ColumnPropNameInTable="SUBTITLEColumn" msprop:Generator_ColumnPropNameInRow="SUBTITLE" msprop:Generator_UserColumnName="SUBTITLE" msprop:Generator_ColumnVarNameInTable="columnSUBTITLE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="EXPLANATION" msprop:Generator_UserColumnName="EXPLANATION" msprop:Generator_ColumnPropNameInTable="EXPLANATIONColumn" msprop:Generator_ColumnPropNameInRow="EXPLANATION" msprop:Generator_ColumnVarNameInTable="columnEXPLANATION" minOccurs="0">
+              <xs:element name="EXPLANATION" msprop:Generator_ColumnPropNameInTable="EXPLANATIONColumn" msprop:Generator_ColumnPropNameInRow="EXPLANATION" msprop:Generator_UserColumnName="EXPLANATION" msprop:Generator_ColumnVarNameInTable="columnEXPLANATION" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1000" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DATE" msprop:Generator_UserColumnName="DATE" msprop:Generator_ColumnPropNameInTable="DATEColumn" msprop:Generator_ColumnPropNameInRow="DATE" msprop:Generator_ColumnVarNameInTable="columnDATE" minOccurs="0">
+              <xs:element name="DATE" msprop:Generator_ColumnPropNameInTable="DATEColumn" msprop:Generator_ColumnPropNameInRow="DATE" msprop:Generator_UserColumnName="DATE" msprop:Generator_ColumnVarNameInTable="columnDATE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -530,39 +602,39 @@ FROM            TBLSKILLS</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TBLEDUCATION" msprop:Generator_RowClassName="TBLEDUCATIONRow" msprop:Generator_RowEvHandlerName="TBLEDUCATIONRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLEDUCATIONRowDeleted" msprop:Generator_RowDeletingName="TBLEDUCATIONRowDeleting" msprop:Generator_RowEvArgName="TBLEDUCATIONRowChangeEvent" msprop:Generator_TablePropName="TBLEDUCATION" msprop:Generator_RowChangedName="TBLEDUCATIONRowChanged" msprop:Generator_UserTableName="TBLEDUCATION" msprop:Generator_RowChangingName="TBLEDUCATIONRowChanging" msprop:Generator_TableClassName="TBLEDUCATIONDataTable" msprop:Generator_TableVarName="tableTBLEDUCATION">
+        <xs:element name="TBLEDUCATION" msprop:Generator_RowEvHandlerName="TBLEDUCATIONRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLEDUCATIONRowDeleted" msprop:Generator_RowDeletingName="TBLEDUCATIONRowDeleting" msprop:Generator_RowEvArgName="TBLEDUCATIONRowChangeEvent" msprop:Generator_TablePropName="TBLEDUCATION" msprop:Generator_RowChangedName="TBLEDUCATIONRowChanged" msprop:Generator_UserTableName="TBLEDUCATION" msprop:Generator_RowChangingName="TBLEDUCATIONRowChanging" msprop:Generator_RowClassName="TBLEDUCATIONRow" msprop:Generator_TableClassName="TBLEDUCATIONDataTable" msprop:Generator_TableVarName="tableTBLEDUCATION">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
-              <xs:element name="TITLE" msprop:Generator_UserColumnName="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_ColumnVarNameInTable="columnTITLE" minOccurs="0">
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
+              <xs:element name="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_UserColumnName="TITLE" msprop:Generator_ColumnVarNameInTable="columnTITLE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="SUBTITLE" msprop:Generator_UserColumnName="SUBTITLE" msprop:Generator_ColumnPropNameInTable="SUBTITLEColumn" msprop:Generator_ColumnPropNameInRow="SUBTITLE" msprop:Generator_ColumnVarNameInTable="columnSUBTITLE" minOccurs="0">
+              <xs:element name="SUBTITLE" msprop:Generator_ColumnPropNameInTable="SUBTITLEColumn" msprop:Generator_ColumnPropNameInRow="SUBTITLE" msprop:Generator_UserColumnName="SUBTITLE" msprop:Generator_ColumnVarNameInTable="columnSUBTITLE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="EXPLANATION" msprop:Generator_UserColumnName="EXPLANATION" msprop:Generator_ColumnPropNameInTable="EXPLANATIONColumn" msprop:Generator_ColumnPropNameInRow="EXPLANATION" msprop:Generator_ColumnVarNameInTable="columnEXPLANATION" minOccurs="0">
+              <xs:element name="EXPLANATION" msprop:Generator_ColumnPropNameInTable="EXPLANATIONColumn" msprop:Generator_ColumnPropNameInRow="EXPLANATION" msprop:Generator_UserColumnName="EXPLANATION" msprop:Generator_ColumnVarNameInTable="columnEXPLANATION" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="250" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="AVERAGE" msprop:Generator_UserColumnName="AVERAGE" msprop:Generator_ColumnPropNameInTable="AVERAGEColumn" msprop:Generator_ColumnPropNameInRow="AVERAGE" msprop:Generator_ColumnVarNameInTable="columnAVERAGE" minOccurs="0">
+              <xs:element name="AVERAGE" msprop:Generator_ColumnPropNameInTable="AVERAGEColumn" msprop:Generator_ColumnPropNameInRow="AVERAGE" msprop:Generator_UserColumnName="AVERAGE" msprop:Generator_ColumnVarNameInTable="columnAVERAGE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DATE" msprop:Generator_UserColumnName="DATE" msprop:Generator_ColumnPropNameInTable="DATEColumn" msprop:Generator_ColumnPropNameInRow="DATE" msprop:Generator_ColumnVarNameInTable="columnDATE" minOccurs="0">
+              <xs:element name="DATE" msprop:Generator_ColumnPropNameInTable="DATEColumn" msprop:Generator_ColumnPropNameInRow="DATE" msprop:Generator_UserColumnName="DATE" msprop:Generator_ColumnVarNameInTable="columnDATE" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -572,11 +644,11 @@ FROM            TBLSKILLS</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TBLHOBBIES" msprop:Generator_RowClassName="TBLHOBBIESRow" msprop:Generator_RowEvHandlerName="TBLHOBBIESRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLHOBBIESRowDeleted" msprop:Generator_RowDeletingName="TBLHOBBIESRowDeleting" msprop:Generator_RowEvArgName="TBLHOBBIESRowChangeEvent" msprop:Generator_TablePropName="TBLHOBBIES" msprop:Generator_RowChangedName="TBLHOBBIESRowChanged" msprop:Generator_UserTableName="TBLHOBBIES" msprop:Generator_RowChangingName="TBLHOBBIESRowChanging" msprop:Generator_TableClassName="TBLHOBBIESDataTable" msprop:Generator_TableVarName="tableTBLHOBBIES">
+        <xs:element name="TBLHOBBIES" msprop:Generator_RowEvHandlerName="TBLHOBBIESRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLHOBBIESRowDeleted" msprop:Generator_RowDeletingName="TBLHOBBIESRowDeleting" msprop:Generator_RowEvArgName="TBLHOBBIESRowChangeEvent" msprop:Generator_TablePropName="TBLHOBBIES" msprop:Generator_RowChangedName="TBLHOBBIESRowChanged" msprop:Generator_UserTableName="TBLHOBBIES" msprop:Generator_RowChangingName="TBLHOBBIESRowChanging" msprop:Generator_RowClassName="TBLHOBBIESRow" msprop:Generator_TableClassName="TBLHOBBIESDataTable" msprop:Generator_TableVarName="tableTBLHOBBIES">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
-              <xs:element name="HOBBY" msprop:Generator_UserColumnName="HOBBY" msprop:Generator_ColumnPropNameInTable="HOBBYColumn" msprop:Generator_ColumnPropNameInRow="HOBBY" msprop:Generator_ColumnVarNameInTable="columnHOBBY" minOccurs="0">
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
+              <xs:element name="HOBBY" msprop:Generator_ColumnPropNameInTable="HOBBYColumn" msprop:Generator_ColumnPropNameInRow="HOBBY" msprop:Generator_UserColumnName="HOBBY" msprop:Generator_ColumnVarNameInTable="columnHOBBY" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="500" />
@@ -586,11 +658,11 @@ FROM            TBLSKILLS</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TBLEVENTS" msprop:Generator_RowClassName="TBLEVENTSRow" msprop:Generator_RowEvHandlerName="TBLEVENTSRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLEVENTSRowDeleted" msprop:Generator_RowDeletingName="TBLEVENTSRowDeleting" msprop:Generator_RowEvArgName="TBLEVENTSRowChangeEvent" msprop:Generator_TablePropName="TBLEVENTS" msprop:Generator_RowChangedName="TBLEVENTSRowChanged" msprop:Generator_UserTableName="TBLEVENTS" msprop:Generator_RowChangingName="TBLEVENTSRowChanging" msprop:Generator_TableClassName="TBLEVENTSDataTable" msprop:Generator_TableVarName="tableTBLEVENTS">
+        <xs:element name="TBLEVENTS" msprop:Generator_RowEvHandlerName="TBLEVENTSRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLEVENTSRowDeleted" msprop:Generator_RowDeletingName="TBLEVENTSRowDeleting" msprop:Generator_RowEvArgName="TBLEVENTSRowChangeEvent" msprop:Generator_TablePropName="TBLEVENTS" msprop:Generator_RowChangedName="TBLEVENTSRowChanged" msprop:Generator_UserTableName="TBLEVENTS" msprop:Generator_RowChangingName="TBLEVENTSRowChanging" msprop:Generator_RowClassName="TBLEVENTSRow" msprop:Generator_TableClassName="TBLEVENTSDataTable" msprop:Generator_TableVarName="tableTBLEVENTS">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
-              <xs:element name="EVENT" msprop:Generator_UserColumnName="EVENT" msprop:Generator_ColumnPropNameInTable="EVENTColumn" msprop:Generator_ColumnPropNameInRow="EVENT" msprop:Generator_ColumnVarNameInTable="columnEVENT" minOccurs="0">
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
+              <xs:element name="EVENT" msprop:Generator_ColumnPropNameInTable="EVENTColumn" msprop:Generator_ColumnPropNameInRow="EVENT" msprop:Generator_UserColumnName="EVENT" msprop:Generator_ColumnVarNameInTable="columnEVENT" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="250" />
@@ -600,14 +672,35 @@ FROM            TBLSKILLS</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TBLSKILLS" msprop:Generator_RowClassName="TBLSKILLSRow" msprop:Generator_RowEvHandlerName="TBLSKILLSRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLSKILLSRowDeleted" msprop:Generator_RowDeletingName="TBLSKILLSRowDeleting" msprop:Generator_RowEvArgName="TBLSKILLSRowChangeEvent" msprop:Generator_TablePropName="TBLSKILLS" msprop:Generator_RowChangedName="TBLSKILLSRowChanged" msprop:Generator_UserTableName="TBLSKILLS" msprop:Generator_RowChangingName="TBLSKILLSRowChanging" msprop:Generator_TableClassName="TBLSKILLSDataTable" msprop:Generator_TableVarName="tableTBLSKILLS">
+        <xs:element name="TBLSKILLS" msprop:Generator_RowEvHandlerName="TBLSKILLSRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLSKILLSRowDeleted" msprop:Generator_RowDeletingName="TBLSKILLSRowDeleting" msprop:Generator_RowEvArgName="TBLSKILLSRowChangeEvent" msprop:Generator_TablePropName="TBLSKILLS" msprop:Generator_RowChangedName="TBLSKILLSRowChanged" msprop:Generator_UserTableName="TBLSKILLS" msprop:Generator_RowChangingName="TBLSKILLSRowChanging" msprop:Generator_RowClassName="TBLSKILLSRow" msprop:Generator_TableClassName="TBLSKILLSDataTable" msprop:Generator_TableVarName="tableTBLSKILLS">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
-              <xs:element name="SKILL" msprop:Generator_UserColumnName="SKILL" msprop:Generator_ColumnPropNameInTable="SKILLColumn" msprop:Generator_ColumnPropNameInRow="SKILL" msprop:Generator_ColumnVarNameInTable="columnSKILL" minOccurs="0">
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:short" />
+              <xs:element name="SKILL" msprop:Generator_ColumnPropNameInTable="SKILLColumn" msprop:Generator_ColumnPropNameInRow="SKILL" msprop:Generator_UserColumnName="SKILL" msprop:Generator_ColumnVarNameInTable="columnSKILL" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBLTODOLIST" msprop:Generator_RowEvHandlerName="TBLTODOLISTRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLTODOLISTRowDeleted" msprop:Generator_RowDeletingName="TBLTODOLISTRowDeleting" msprop:Generator_RowEvArgName="TBLTODOLISTRowChangeEvent" msprop:Generator_TablePropName="TBLTODOLIST" msprop:Generator_RowChangedName="TBLTODOLISTRowChanged" msprop:Generator_RowChangingName="TBLTODOLISTRowChanging" msprop:Generator_TableClassName="TBLTODOLISTDataTable" msprop:Generator_RowClassName="TBLTODOLISTRow" msprop:Generator_TableVarName="tableTBLTODOLIST" msprop:Generator_UserTableName="TBLTODOLIST">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:short" />
+              <xs:element name="TITLE" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_ColumnVarNameInTable="columnTITLE" msprop:Generator_UserColumnName="TITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESCRIPTION" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_UserColumnName="DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>

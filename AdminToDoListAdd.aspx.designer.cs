@@ -11,79 +11,61 @@ namespace BlogWeb
 {
 
 
-	public partial class Default
+	public partial class AdminToDoListAdd
 	{
 
 		/// <summary>
-		/// Repeater7 control.
+		/// FrmToDoListAdd control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater Repeater7;
+		protected global::System.Web.UI.HtmlControls.HtmlForm FrmToDoListAdd;
 
 		/// <summary>
-		/// Repeater1 control.
+		/// Label1 control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater Repeater1;
+		protected global::System.Web.UI.WebControls.Label Label1;
 
 		/// <summary>
-		/// Repeater2 control.
+		/// TxtTitle control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater Repeater2;
+		protected global::System.Web.UI.WebControls.TextBox TxtTitle;
 
 		/// <summary>
-		/// Repeater3 control.
+		/// Label2 control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater Repeater3;
+		protected global::System.Web.UI.WebControls.Label Label2;
 
 		/// <summary>
-		/// Repeater4 control.
+		/// TxtDescription control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater Repeater4;
+		protected global::System.Web.UI.WebControls.TextBox TxtDescription;
 
 		/// <summary>
-		/// Repeater5 control.
+		/// BtnAdd control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater Repeater5;
-
-		/// <summary>
-		/// Repeater6 control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater Repeater6;
-
-		/// <summary>
-		/// Repeater8 control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Repeater Repeater8;
+		protected global::System.Web.UI.WebControls.Button BtnAdd;
 	}
 }
