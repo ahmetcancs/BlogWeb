@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BlogWeb
+namespace BlogWeb.Education
 {
     public partial class AdminEducationAdd : System.Web.UI.Page
     {
@@ -18,7 +18,7 @@ namespace BlogWeb
         {
             DataSetTableAdapters.TBLEDUCATIONTableAdapter dt = new DataSetTableAdapters.TBLEDUCATIONTableAdapter();
             dt.EducationAdd(TxtTitle.Text, TxtSubtitle.Text, TxtExplanation.Text, TxtAverage.Text,TxtAverage.Text);
-            Response.Redirect("AdminEducations.Aspx");
+            Response.Redirect("~/Education/AdminEducations.Aspx");
         }
     }
 }

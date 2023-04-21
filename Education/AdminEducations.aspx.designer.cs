@@ -7,29 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BlogWeb
+namespace BlogWeb.Education
 {
 
 
-	public partial class Admin
+	public partial class AdminEducations
 	{
 
 		/// <summary>
-		/// ContentPlaceHolder1 control.
+		/// FrmEducation control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+		protected global::System.Web.UI.HtmlControls.HtmlForm FrmEducation;
 
 		/// <summary>
-		/// ContentPlaceHolder2 control.
+		/// RptEducation control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
+		protected global::System.Web.UI.WebControls.Repeater RptEducation;
+
+		/// <summary>
+		/// AddLink control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.HyperLink AddLink;
 	}
 }

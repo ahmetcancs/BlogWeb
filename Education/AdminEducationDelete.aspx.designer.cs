@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BlogWeb
+namespace BlogWeb.Education
 {
 
 
-    public partial class AdminEducationDelete
-    {
-    }
+	public partial class AdminEducationDelete
+	{
+	}
 }

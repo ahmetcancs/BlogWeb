@@ -67,19 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminAbout.aspx" />
-    <Content Include="AdminEducationAdd.aspx" />
-    <Content Include="AdminEducationDelete.aspx" />
-    <Content Include="AdminEducations.aspx" />
-    <Content Include="AdminEducationUpdate.aspx" />
-    <Content Include="AdminEventAdd.aspx" />
-    <Content Include="AdminEventDelete.aspx" />
-    <Content Include="AdminEvents.aspx" />
-    <Content Include="AdminEventUpdate.aspx" />
-    <Content Include="AdminExperienceAdd.aspx" />
-    <Content Include="AdminExperienceDelete.aspx" />
-    <Content Include="AdminExperiences.aspx" />
-    <Content Include="AdminExperienceUpdate.aspx" />
+    <Content Include="About\AdminAbout.aspx" />
+    <Content Include="Education\AdminEducationAdd.aspx" />
+    <Content Include="Education\AdminEducationDelete.aspx" />
+    <Content Include="Education\AdminEducations.aspx" />
+    <Content Include="Education\AdminEducationUpdate.aspx" />
+    <Content Include="Event\AdminEventAdd.aspx" />
+    <Content Include="Event\AdminEventDelete.aspx" />
+    <Content Include="Event\AdminEvents.aspx" />
+    <Content Include="Event\AdminEventUpdate.aspx" />
+    <Content Include="Experience\AdminExperienceAdd.aspx" />
+    <Content Include="Experience\AdminExperienceDelete.aspx" />
+    <Content Include="Experience\AdminExperiences.aspx" />
+    <Content Include="Experience\AdminExperienceUpdate.aspx" />
     <Content Include="AdminFiles\bootstrap-3.3.7\.gitattributes" />
     <Content Include="AdminFiles\bootstrap-3.3.7\.gitignore" />
     <Content Include="AdminFiles\bootstrap-3.3.7\dist\css\bootstrap-theme.css" />
@@ -347,17 +347,17 @@
     <Content Include="AdminFiles\sidebar\style4.css" />
     <Content Include="AdminFiles\sidebar\style5.css" />
     <Content Include="AdminFiles\StyleSheet2.css" />
-    <Content Include="AdminHobbies.aspx" />
-    <Content Include="AdminHobbyAdd.aspx" />
-    <Content Include="AdminHobbyDelete.aspx" />
-    <Content Include="AdminHobbyUpdate.aspx" />
-    <Content Include="AdminSkillAdd.aspx" />
-    <Content Include="AdminSkillDelete.aspx" />
-    <Content Include="AdminSkills.aspx" />
-    <Content Include="AdminSkillUpdate.aspx" />
-    <Content Include="AdminToDoListAdd.aspx" />
-    <Content Include="AdminToDoListDelete.aspx" />
-    <Content Include="AdminToDoListUpdate.aspx" />
+    <Content Include="Hobby\AdminHobbies.aspx" />
+    <Content Include="Hobby\AdminHobbyAdd.aspx" />
+    <Content Include="Hobby\AdminHobbyDelete.aspx" />
+    <Content Include="Hobby\AdminHobbyUpdate.aspx" />
+    <Content Include="Skills\AdminSkillAdd.aspx" />
+    <Content Include="Skills\AdminSkillDelete.aspx" />
+    <Content Include="Skills\AdminSkills.aspx" />
+    <Content Include="Skills\AdminSkillUpdate.aspx" />
+    <Content Include="ToDoList\AdminToDoListAdd.aspx" />
+    <Content Include="ToDoList\AdminToDoListDelete.aspx" />
+    <Content Include="ToDoList\AdminToDoListUpdate.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Files\.gitignore" />
     <Content Include="Files\css\resume.css" />
@@ -1765,14 +1765,14 @@
     <Content Include="Login.aspx" />
     <Content Include="Login.css" />
     <Content Include="Web.config" />
-    <Content Include="AdminToDoList.aspx" />
+    <Content Include="ToDoList\AdminToDoList.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminAbout.aspx.cs">
+    <Compile Include="About\AdminAbout.aspx.cs">
       <DependentUpon>AdminAbout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminAbout.aspx.designer.cs">
+    <Compile Include="About\AdminAbout.aspx.designer.cs">
       <DependentUpon>AdminAbout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
@@ -1782,165 +1782,165 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="AdminEducationAdd.aspx.cs">
+    <Compile Include="Education\AdminEducationAdd.aspx.cs">
       <DependentUpon>AdminEducationAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminEducationAdd.aspx.designer.cs">
+    <Compile Include="Education\AdminEducationAdd.aspx.designer.cs">
       <DependentUpon>AdminEducationAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminEducationDelete.aspx.cs">
+    <Compile Include="Education\AdminEducationDelete.aspx.cs">
       <DependentUpon>AdminEducationDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminEducationDelete.aspx.designer.cs">
+    <Compile Include="Education\AdminEducationDelete.aspx.designer.cs">
       <DependentUpon>AdminEducationDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminEducations.aspx.cs">
+    <Compile Include="Education\AdminEducations.aspx.cs">
       <DependentUpon>AdminEducations.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminEducations.aspx.designer.cs">
+    <Compile Include="Education\AdminEducations.aspx.designer.cs">
       <DependentUpon>AdminEducations.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminEducationUpdate.aspx.cs">
+    <Compile Include="Education\AdminEducationUpdate.aspx.cs">
       <DependentUpon>AdminEducationUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminEducationUpdate.aspx.designer.cs">
+    <Compile Include="Education\AdminEducationUpdate.aspx.designer.cs">
       <DependentUpon>AdminEducationUpdate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminEventAdd.aspx.cs">
+    <Compile Include="Event\AdminEventAdd.aspx.cs">
       <DependentUpon>AdminEventAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminEventAdd.aspx.designer.cs">
+    <Compile Include="Event\AdminEventAdd.aspx.designer.cs">
       <DependentUpon>AdminEventAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminEventDelete.aspx.cs">
+    <Compile Include="Event\AdminEventDelete.aspx.cs">
       <DependentUpon>AdminEventDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminEventDelete.aspx.designer.cs">
+    <Compile Include="Event\AdminEventDelete.aspx.designer.cs">
       <DependentUpon>AdminEventDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminEvents.aspx.cs">
+    <Compile Include="Event\AdminEvents.aspx.cs">
       <DependentUpon>AdminEvents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminEvents.aspx.designer.cs">
+    <Compile Include="Event\AdminEvents.aspx.designer.cs">
       <DependentUpon>AdminEvents.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminEventUpdate.aspx.cs">
+    <Compile Include="Event\AdminEventUpdate.aspx.cs">
       <DependentUpon>AdminEventUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminEventUpdate.aspx.designer.cs">
+    <Compile Include="Event\AdminEventUpdate.aspx.designer.cs">
       <DependentUpon>AdminEventUpdate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminExperienceAdd.aspx.cs">
+    <Compile Include="Experience\AdminExperienceAdd.aspx.cs">
       <DependentUpon>AdminExperienceAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminExperienceAdd.aspx.designer.cs">
+    <Compile Include="Experience\AdminExperienceAdd.aspx.designer.cs">
       <DependentUpon>AdminExperienceAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminExperienceDelete.aspx.cs">
+    <Compile Include="Experience\AdminExperienceDelete.aspx.cs">
       <DependentUpon>AdminExperienceDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminExperienceDelete.aspx.designer.cs">
+    <Compile Include="Experience\AdminExperienceDelete.aspx.designer.cs">
       <DependentUpon>AdminExperienceDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminExperiences.aspx.cs">
+    <Compile Include="Experience\AdminExperiences.aspx.cs">
       <DependentUpon>AdminExperiences.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminExperiences.aspx.designer.cs">
+    <Compile Include="Experience\AdminExperiences.aspx.designer.cs">
       <DependentUpon>AdminExperiences.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminExperienceUpdate.aspx.cs">
+    <Compile Include="Experience\AdminExperienceUpdate.aspx.cs">
       <DependentUpon>AdminExperienceUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminExperienceUpdate.aspx.designer.cs">
+    <Compile Include="Experience\AdminExperienceUpdate.aspx.designer.cs">
       <DependentUpon>AdminExperienceUpdate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminHobbies.aspx.cs">
+    <Compile Include="Hobby\AdminHobbies.aspx.cs">
       <DependentUpon>AdminHobbies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminHobbies.aspx.designer.cs">
+    <Compile Include="Hobby\AdminHobbies.aspx.designer.cs">
       <DependentUpon>AdminHobbies.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminHobbyAdd.aspx.cs">
+    <Compile Include="Hobby\AdminHobbyAdd.aspx.cs">
       <DependentUpon>AdminHobbyAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminHobbyAdd.aspx.designer.cs">
+    <Compile Include="Hobby\AdminHobbyAdd.aspx.designer.cs">
       <DependentUpon>AdminHobbyAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminHobbyDelete.aspx.cs">
+    <Compile Include="Hobby\AdminHobbyDelete.aspx.cs">
       <DependentUpon>AdminHobbyDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminHobbyDelete.aspx.designer.cs">
+    <Compile Include="Hobby\AdminHobbyDelete.aspx.designer.cs">
       <DependentUpon>AdminHobbyDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminHobbyUpdate.aspx.cs">
+    <Compile Include="Hobby\AdminHobbyUpdate.aspx.cs">
       <DependentUpon>AdminHobbyUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminHobbyUpdate.aspx.designer.cs">
+    <Compile Include="Hobby\AdminHobbyUpdate.aspx.designer.cs">
       <DependentUpon>AdminHobbyUpdate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminSkillAdd.aspx.cs">
+    <Compile Include="Skills\AdminSkillAdd.aspx.cs">
       <DependentUpon>AdminSkillAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminSkillAdd.aspx.designer.cs">
+    <Compile Include="Skills\AdminSkillAdd.aspx.designer.cs">
       <DependentUpon>AdminSkillAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminSkillDelete.aspx.cs">
+    <Compile Include="Skills\AdminSkillDelete.aspx.cs">
       <DependentUpon>AdminSkillDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminSkillDelete.aspx.designer.cs">
+    <Compile Include="Skills\AdminSkillDelete.aspx.designer.cs">
       <DependentUpon>AdminSkillDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminSkills.aspx.cs">
+    <Compile Include="Skills\AdminSkills.aspx.cs">
       <DependentUpon>AdminSkills.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminSkills.aspx.designer.cs">
+    <Compile Include="Skills\AdminSkills.aspx.designer.cs">
       <DependentUpon>AdminSkills.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminSkillUpdate.aspx.cs">
+    <Compile Include="Skills\AdminSkillUpdate.aspx.cs">
       <DependentUpon>AdminSkillUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminSkillUpdate.aspx.designer.cs">
+    <Compile Include="Skills\AdminSkillUpdate.aspx.designer.cs">
       <DependentUpon>AdminSkillUpdate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminToDoListAdd.aspx.cs">
+    <Compile Include="ToDoList\AdminToDoListAdd.aspx.cs">
       <DependentUpon>AdminToDoListAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminToDoListAdd.aspx.designer.cs">
+    <Compile Include="ToDoList\AdminToDoListAdd.aspx.designer.cs">
       <DependentUpon>AdminToDoListAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminToDoListDelete.aspx.cs">
+    <Compile Include="ToDoList\AdminToDoListDelete.aspx.cs">
       <DependentUpon>AdminToDoListDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminToDoListDelete.aspx.designer.cs">
+    <Compile Include="ToDoList\AdminToDoListDelete.aspx.designer.cs">
       <DependentUpon>AdminToDoListDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminToDoListUpdate.aspx.cs">
+    <Compile Include="ToDoList\AdminToDoListUpdate.aspx.cs">
       <DependentUpon>AdminToDoListUpdate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminToDoListUpdate.aspx.designer.cs">
+    <Compile Include="ToDoList\AdminToDoListUpdate.aspx.designer.cs">
       <DependentUpon>AdminToDoListUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataSet.Designer.cs">
@@ -1963,11 +1963,11 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AdminToDoList.aspx.cs">
+    <Compile Include="ToDoList\AdminToDoList.aspx.cs">
       <DependentUpon>AdminToDoList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminToDoList.aspx.designer.cs">
+    <Compile Include="ToDoList\AdminToDoList.aspx.designer.cs">
       <DependentUpon>AdminToDoList.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

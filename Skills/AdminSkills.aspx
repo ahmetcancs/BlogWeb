@@ -26,6 +26,6 @@
             </tbody>
 
         </table>
-        <asp:HyperLink NavigateUrl="~/AdminSkillAdd.aspx" ID="AddLink" runat="server" CssClass="btn btn-info">Add an Skill</asp:HyperLink>
+        <asp:HyperLink NavigateUrl="AdminSkillAdd.aspx" ID="AddLink" runat="server" CssClass="btn btn-info">Add an Skill</asp:HyperLink>
     </form>
 </asp:Content>

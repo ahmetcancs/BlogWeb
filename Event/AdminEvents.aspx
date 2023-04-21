@@ -25,6 +25,6 @@
                 </asp:Repeater>
             </tbody>
         </table>
-        <asp:HyperLink NavigateUrl="~/AdminEventAdd.aspx" ID="AddLink" runat="server" CssClass="btn btn-info">Add an Event Info</asp:HyperLink>
+        <asp:HyperLink NavigateUrl="AdminEventAdd.aspx" ID="AddLink" runat="server" CssClass="btn btn-info">Add an Event Info</asp:HyperLink>
     </form>
 </asp:Content>

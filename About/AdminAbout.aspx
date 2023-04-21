@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminAbout.aspx.cs" Inherits="BlogWeb.AdminAbout" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminAbout.aspx.cs" Inherits="BlogWeb.About.AdminAbout" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -9,7 +9,7 @@
             <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
             <asp:TextBox ID="TxtName" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
-        <br />
+        <br /> 
         <div>
             <asp:Label ID="Label2" runat="server" Text="Surname"></asp:Label>
             <asp:TextBox ID="TxtSurname" runat="server" CssClass="form-control"></asp:TextBox>
