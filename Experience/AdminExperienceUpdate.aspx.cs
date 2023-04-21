@@ -17,7 +17,7 @@ namespace BlogWeb
 
             if (Page.IsPostBack == false)
             {
-                DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
+				DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter();
                 TxtTitle.Text = dt.GetDataByExperience(Convert.ToInt16(Id))[0].TITLE;
                 TxtSubtitle.Text = dt.GetDataByExperience(Convert.ToInt16(Id))[0].SUBTITLE;
                 TxtExplanation.Text = dt.GetDataByExperience(Convert.ToInt16(Id))[0].EXPLANATION;
@@ -27,7 +27,7 @@ namespace BlogWeb
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
+			DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter();
             dt.ExperienceUpdate(TxtTitle.Text, TxtSubtitle.Text, TxtExplanation.Text, TxtDate.Text, Convert.ToInt16(TxtId.Text));
             Response.Redirect("AdminExperiences.Aspx");
         }

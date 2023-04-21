@@ -16,14 +16,14 @@ namespace BlogWeb
             TxtId.Text = Id.ToString();
             if(Page.IsPostBack == false)
             {
-                DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSetTableAdapters.TBLSKILLSTableAdapter();
-                TxtSkill.Text = dt.GetDataBySkill(Convert.ToInt16(Id))[0].SKILL;
+				DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter();
+				TxtSkill.Text = dt.GetDataBySkill(Convert.ToInt16(Id))[0].SKILL;
             }
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSetTableAdapters.TBLSKILLSTableAdapter();
+            DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter();
             dt.SkillUpdate(TxtSkill.Text,Convert.ToInt16(TxtId.Text));
             Response.Redirect("AdminSkills.Aspx");
         }

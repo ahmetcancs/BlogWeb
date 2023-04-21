@@ -18,14 +18,14 @@ namespace BlogWeb
 
             if (Page.IsPostBack == false)
             {
-                DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSetTableAdapters.TBLHOBBIESTableAdapter();
+				DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter();
                 TxtHobby.Text = dt.GetDataByHobby(Convert.ToInt16(Id))[0].HOBBY;
             }
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSetTableAdapters.TBLHOBBIESTableAdapter();
+			DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter();
             dt.HobbyUpdate(TxtHobby.Text, Convert.ToInt16(TxtId.Text));
             Response.Redirect("AdminHobbies.Aspx");
         }

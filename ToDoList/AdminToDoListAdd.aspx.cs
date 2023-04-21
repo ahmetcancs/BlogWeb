@@ -16,7 +16,7 @@ namespace BlogWeb
 
 		protected void BtnAdd_Click(object sender, EventArgs e)
 		{
-			DataSetTableAdapters.TBLTODOLISTTableAdapter dt = new DataSetTableAdapters.TBLTODOLISTTableAdapter();
+			DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter dt = new DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter();
 			dt.ToDoListAdd(TxtTitle.Text,TxtDescription.Text);
 			Response.Redirect("AdminToDoList.aspx");
 		}

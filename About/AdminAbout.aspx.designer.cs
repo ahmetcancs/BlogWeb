@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BlogWeb.About
+namespace BlogWeb
 {
 
 

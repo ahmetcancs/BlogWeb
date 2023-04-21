@@ -12,7 +12,7 @@ namespace BlogWeb
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			int Id = Convert.ToInt16(Request.QueryString["ID"]);
-			DataSetTableAdapters.TBLTODOLISTTableAdapter dt = new DataSetTableAdapters.TBLTODOLISTTableAdapter();
+			DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter dt = new DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter();
 			dt.ToDoListDelete(Convert.ToInt16(Id));
 			Response.Redirect("AdminToDoList.Aspx");
 		}

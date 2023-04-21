@@ -16,7 +16,7 @@ namespace BlogWeb
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSetTableAdapters.TBLHOBBIESTableAdapter();
+			DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter();
             dt.HobbyAdd(TxtHobby.Text);
             Response.Redirect("AdminHobbies.Aspx");
             

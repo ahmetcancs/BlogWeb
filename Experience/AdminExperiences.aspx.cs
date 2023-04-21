@@ -11,7 +11,7 @@ namespace BlogWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
+			DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter();
             RptExperiences.DataSource = dt.ListExperience();
             RptExperiences.DataBind();
         }

@@ -16,7 +16,7 @@ namespace BlogWeb
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSetTableAdapters.TBLSKILLSTableAdapter();
+			DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter();
             dt.SkillAdd(TxtSkill.Text);
             Response.Redirect("AdminSkills.aspx");
         }

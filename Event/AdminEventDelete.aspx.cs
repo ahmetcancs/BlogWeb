@@ -12,7 +12,7 @@ namespace BlogWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             int Id = Convert.ToInt16(Request.QueryString["ID"]);
-            DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSetTableAdapters.TBLEVENTSTableAdapter();
+			DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter();
             dt.EventDelete(Convert.ToInt16(Id));
             Response.Redirect("AdminEvents.Aspx");
         }

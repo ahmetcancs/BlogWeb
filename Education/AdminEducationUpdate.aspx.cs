@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BlogWeb.Education
+namespace BlogWeb
 {
     public partial class AdminEducationUpdate : System.Web.UI.Page
     {
@@ -19,7 +19,7 @@ namespace BlogWeb.Education
 
             if (Page.IsPostBack == false)
             {
-                DataSetTableAdapters.TBLEDUCATIONTableAdapter dt = new DataSetTableAdapters.TBLEDUCATIONTableAdapter();
+				DataSet.DataSetTableAdapters.TBLEDUCATIONTableAdapter dt = new DataSet.DataSetTableAdapters.TBLEDUCATIONTableAdapter();
                 TxtTitle.Text = dt.GetDataByEducation(Convert.ToInt16(Id))[0].TITLE;
                 TxtSubtitle.Text = dt.GetDataByEducation(Convert.ToInt16(Id))[0].SUBTITLE;
                 TxtExplanation.Text = dt.GetDataByEducation(Convert.ToInt16(Id))[0].EXPLANATION;
@@ -30,7 +30,7 @@ namespace BlogWeb.Education
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLEDUCATIONTableAdapter dt = new DataSetTableAdapters.TBLEDUCATIONTableAdapter();
+			DataSet.DataSetTableAdapters.TBLEDUCATIONTableAdapter dt = new DataSet.DataSetTableAdapters.TBLEDUCATIONTableAdapter();
             dt.EducationUpdate(TxtTitle.Text, TxtSubtitle.Text, TxtExplanation.Text, TxtAverage.Text, TxtDate.Text, Convert.ToInt16(TxtId.Text));
             Response.Redirect("~/Education/AdminEducations.Aspx");
         }

@@ -13,7 +13,7 @@ namespace BlogWeb
         {
             //ToInt16 because we signed ID *smallint*
             int Id = Convert.ToInt16(Request.QueryString["ID"]);
-            DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
+			DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter();
             dt.ExperienceDelete(Convert.ToInt16(Id));
             Response.Redirect("AdminExperiences.Aspx");
         }

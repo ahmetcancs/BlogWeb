@@ -11,7 +11,7 @@ namespace BlogWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSetTableAdapters.TBLEVENTSTableAdapter();
+			DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter();
             RptEvent.DataSource = dt.ListEvent();
             RptEvent.DataBind();
         }

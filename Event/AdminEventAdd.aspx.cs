@@ -15,7 +15,7 @@ namespace BlogWeb
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSetTableAdapters.TBLEVENTSTableAdapter();
+			DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter();
             dt.EventAdd(TxtEvent.Text);
             Response.Redirect("AdminEvents.Aspx");
         }

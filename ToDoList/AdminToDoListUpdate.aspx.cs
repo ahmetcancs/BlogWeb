@@ -18,7 +18,7 @@ namespace BlogWeb
 
 			if (Page.IsPostBack == false)
 			{
-				DataSetTableAdapters.TBLTODOLISTTableAdapter dt = new DataSetTableAdapters.TBLTODOLISTTableAdapter();
+				DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter dt = new DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter();
 				TxtTitle.Text = dt.GetDataByToDoList(Convert.ToInt16(Id))[0].TITLE;
 				TxtDescription.Text = dt.GetDataByToDoList(Convert.ToInt16(Id))[0].DESCRIPTION;
 			}
@@ -26,7 +26,7 @@ namespace BlogWeb
 
 		protected void BtnUpdate_Click(object sender, EventArgs e)
 		{
-			DataSetTableAdapters.TBLTODOLISTTableAdapter dt = new DataSetTableAdapters.TBLTODOLISTTableAdapter();
+			DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter dt = new DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter();
 			dt.ToDoListUpdate(TxtTitle.Text,TxtDescription.Text,Convert.ToInt16(TxtId.Text));
 			Response.Redirect("AdminToDoList.Aspx");
 		}

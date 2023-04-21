@@ -12,33 +12,37 @@ namespace BlogWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {   //ABOUT SECTITON for Eval Function
-            DataSetTableAdapters.TBLABOUTTableAdapter dt = new DataSetTableAdapters.TBLABOUTTableAdapter(); 
+			DataSet.DataSetTableAdapters.TBLABOUTTableAdapter dt = new DataSet.DataSetTableAdapters.TBLABOUTTableAdapter(); 
             Repeater1.DataSource = dt.AboutList();
             Repeater1.DataBind();
 
-            DataSetTableAdapters.TBLEXPERIENCETableAdapter dt2 = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
+			DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter dt2 = new DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter();
             Repeater2.DataSource = dt2.ListExperience();
             Repeater2.DataBind();
 
-            DataSetTableAdapters.TBLEDUCATIONTableAdapter dt3 = new DataSetTableAdapters.TBLEDUCATIONTableAdapter();
+			DataSet.DataSetTableAdapters.TBLEDUCATIONTableAdapter dt3 = new DataSet.DataSetTableAdapters.TBLEDUCATIONTableAdapter();
             Repeater3.DataSource = dt3.ListEducation();
             Repeater3.DataBind();
 
-            DataSetTableAdapters.TBLSKILLSTableAdapter dt4 = new DataSetTableAdapters.TBLSKILLSTableAdapter();
+			DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter dt4 = new DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter();
             Repeater4.DataSource = dt4.ListSkill();
             Repeater4.DataBind();
 
-            DataSetTableAdapters.TBLHOBBIESTableAdapter dt5 = new DataSetTableAdapters.TBLHOBBIESTableAdapter();
+			DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter dt5 = new DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter();
             Repeater5.DataSource = dt5.ListHobby();
             Repeater5.DataBind();
 
-            DataSetTableAdapters.TBLEVENTSTableAdapter dt6 = new DataSetTableAdapters.TBLEVENTSTableAdapter();
+			DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter dt6 = new DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter();
             Repeater6.DataSource = dt6.ListEvent();
             Repeater6.DataBind();
 
-            DataSetTableAdapters.TBLABOUTTableAdapter dt7 = new DataSetTableAdapters.TBLABOUTTableAdapter();
+			DataSet.DataSetTableAdapters.TBLABOUTTableAdapter dt7 = new DataSet.DataSetTableAdapters.TBLABOUTTableAdapter();
             Repeater7.DataSource = dt7.AboutList();
             Repeater7.DataBind();
-        }
+
+			DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter dt8 = new DataSet.DataSetTableAdapters.TBLTODOLISTTableAdapter();
+			Repeater8.DataSource = dt8.ListToDoList();
+			Repeater8.DataBind();
+		}
     }
 }

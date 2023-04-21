@@ -26,7 +26,7 @@
                     </ItemTemplate>
                 </asp:Repeater>
             </tbody>
-        </table>
+        </table> 
         <asp:HyperLink NavigateUrl="AdminToDoListAdd.aspx" ID="AddLink" runat="server" CssClass="btn btn-info">Add a Plan</asp:HyperLink>
     </form>
 </asp:Content>

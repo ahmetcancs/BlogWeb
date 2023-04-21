@@ -18,56 +18,56 @@
 <body>
     <div class="wrapper">
 
-<nav id="sidebar">
-    <div class="sidebar-header">
-        <h3>Blog Web Admin Panel</h3>
-        <strong>BS</strong>
-    </div>
-    <ul class="list-unstyled components">
-        <li>
-            <a href="/About/AdminAbout.Aspx">
-                <i class="glyphicon glyphicon-user"></i>
-                ABOUT ME
-            </a>
-        </li>
-        <li>
-            <a href="/Experience/AdminExperiences.Aspx">
-                <i class="glyphicon glyphicon-briefcase"></i>
-                EXPERIENCES
-            </a>
-        </li>
-        <li>
-            <a href="/Education/AdminEducations.Aspx">
-                <i class="glyphicon glyphicon-education"></i>
-                EDUCATION
-            </a>
-        </li>
-        <li>
-            <a href="/Skills/AdminSkills.Aspx">
-                <i class="glyphicon glyphicon-signal"></i>
-                SKILLS
-            </a>
-        </li>
-        <li>
-            <a href="/Hobby/AdminHobbies.Aspx">
-                <i class="glyphicon glyphicon-play"></i>
-                HOBBIES
-            </a>
-        </li>
-        <li>
-            <a href="/Event/AdminEvents.Aspx">
-                <i class="glyphicon glyphicon-fire"></i>
-                EVENTS
-            </a>
-        </li>
-        <li>
-            <a href="/ToDoList/AdminToDoList.Aspx">
-                <i class="glyphicon glyphicon-th-list"></i>
-                To Do List
-            </a>
-        </li>
-    </ul>
-</nav>
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Blog Web Admin Panel</h3>
+                <strong>BS</strong>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="/About/AdminAbout.Aspx">
+                        <i class="glyphicon glyphicon-user"></i>
+                        ABOUT ME
+                    </a>
+                </li>
+                <li>
+                    <a href="/Experience/AdminExperiences.Aspx">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        EXPERIENCES
+                    </a>
+                </li>
+                <li>
+                    <a href="/Education/AdminEducations.Aspx">
+                        <i class="glyphicon glyphicon-education"></i>
+                        EDUCATION
+                    </a>
+                </li>
+                <li>
+                    <a href="/Skills/AdminSkills.Aspx">
+                        <i class="glyphicon glyphicon-signal"></i>
+                        SKILLS
+                    </a>
+                </li>
+                <li>
+                    <a href="/Hobby/AdminHobbies.Aspx">
+                        <i class="glyphicon glyphicon-play"></i>
+                        HOBBIES
+                    </a>
+                </li>
+                <li>
+                    <a href="/Event/AdminEvents.Aspx">
+                        <i class="glyphicon glyphicon-fire"></i>
+                        EVENTS
+                    </a>
+                </li>
+                <li>
+                    <a href="/ToDoList/AdminToDoList.Aspx">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                        To Do List
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <!-- Page Content Holder -->
         <div id="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">

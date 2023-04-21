@@ -12,7 +12,7 @@ namespace BlogWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             int Id = Convert.ToInt16(Request.QueryString["ID"]);
-            DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSetTableAdapters.TBLSKILLSTableAdapter();
+			DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter();
             dt.SkillDelete(Convert.ToInt16(Id));
             Response.Redirect("AdminSkills.aspx");
         }

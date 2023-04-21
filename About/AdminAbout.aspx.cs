@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BlogWeb.About
+namespace BlogWeb
 {
     public partial class AdminAbout : System.Web.UI.Page
     {
@@ -13,7 +13,7 @@ namespace BlogWeb.About
         {
             if(Page.IsPostBack == false)
             {
-            DataSetTableAdapters.TBLABOUTTableAdapter dt = new DataSetTableAdapters.TBLABOUTTableAdapter();
+            DataSet.DataSetTableAdapters.TBLABOUTTableAdapter dt = new DataSet.DataSetTableAdapters.TBLABOUTTableAdapter();
             TxtName.Text = dt.AboutList()[0].NAME;
             TxtSurname.Text = dt.AboutList()[0].SURNAME;
             TxtAddress.Text = dt.AboutList()[0].ADDRESS;
@@ -26,7 +26,7 @@ namespace BlogWeb.About
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLABOUTTableAdapter dt = new DataSetTableAdapters.TBLABOUTTableAdapter();
+			DataSet.DataSetTableAdapters.TBLABOUTTableAdapter dt = new DataSet.DataSetTableAdapters.TBLABOUTTableAdapter();
             dt.AboutUpdate(TxtName.Text, TxtSurname.Text, TxtAddress.Text, TxtMail.Text, TxtPhone.Text, TxtNote.Text, TxtPhoto.Text);
             Response.Redirect("~/About/AdminAbout.Aspx");
         }

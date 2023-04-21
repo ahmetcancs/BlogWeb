@@ -12,7 +12,7 @@ namespace BlogWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             int Id = Convert.ToInt16(Request.QueryString["ID"]);
-            DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSetTableAdapters.TBLHOBBIESTableAdapter();
+			DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter();
             dt.HobbyDelete(Convert.ToInt16(Id));
             Response.Redirect("AdminHobbies.Aspx");
         }

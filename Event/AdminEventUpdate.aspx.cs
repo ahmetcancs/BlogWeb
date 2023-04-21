@@ -17,14 +17,14 @@ namespace BlogWeb
 
             if (Page.IsPostBack == false)
             {
-                DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSetTableAdapters.TBLEVENTSTableAdapter();
+				DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter();
                 TxtEvent.Text = dt.GetDataByEvent(Convert.ToInt16(Id))[0].EVENT;
             }
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSetTableAdapters.TBLEVENTSTableAdapter();
+			DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLEVENTSTableAdapter();
             dt.EventUpdate(TxtEvent.Text, Convert.ToInt16(TxtId.Text));
             Response.Redirect("AdminEvents.Aspx");
         }

@@ -11,7 +11,7 @@ namespace BlogWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSetTableAdapters.TBLSKILLSTableAdapter();
+            DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter dt = new DataSet.DataSetTableAdapters.TBLSKILLSTableAdapter();
             RptSkills.DataSource = dt.ListSkill();
             RptSkills.DataBind();
         }

@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace BlogWeb {
+namespace BlogWeb.DataSet {
     
     
     /// <summary>
@@ -3570,7 +3570,7 @@ namespace BlogWeb {
         }
     }
 }
-namespace BlogWeb.DataSetTableAdapters {
+namespace BlogWeb.DataSet.DataSetTableAdapters {
     
     
     /// <summary>

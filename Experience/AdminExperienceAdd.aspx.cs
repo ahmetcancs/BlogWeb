@@ -17,7 +17,7 @@ namespace BlogWeb
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSetTableAdapters.TBLEXPERIENCETableAdapter();
+			DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter dt = new DataSet.DataSetTableAdapters.TBLEXPERIENCETableAdapter();
             dt.ExperienceAdd(TxtTitle.Text, TxtSubtitle.Text, TxtExplanation.Text, TxtDate.Text);
             Response.Redirect("AdminExperiences.Aspx");
         }

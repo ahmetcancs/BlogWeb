@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BlogWeb.Education
+namespace BlogWeb
 {
 
 

@@ -11,7 +11,7 @@ namespace BlogWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSetTableAdapters.TBLHOBBIESTableAdapter();
+			DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter dt = new DataSet.DataSetTableAdapters.TBLHOBBIESTableAdapter();
             RptHobbies.DataSource = dt.ListHobby();
             RptHobbies.DataBind();
         }
